@@ -1,0 +1,551 @@
+h4.ergebnis9 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis9 span {
+    position:relative;
+}
+h4.ergebnis9 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 224%;
+}
+h4.ergebnis9 span:after {
+    position: absolute;
+    top: 8px;
+    left: 178px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis13 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis13 span {
+    position:relative;
+}
+h4.ergebnis13 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 247%;
+}
+h4.ergebnis13 span:after {
+    position: absolute;
+    top: 8px;
+    left: 168px;
+    right:0;
+    bottom: 0;
+}
+
+h4.ergebnis14 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis14 span {
+    position:relative;
+}
+h4.ergebnis14 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 130%;
+}
+h4.ergebnis14 span:after {
+    position: absolute;
+    top: 8px;
+    left: 243px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis16 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis16 span {
+    position:relative;
+}
+h4.ergebnis16 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 110%;
+}
+h4.ergebnis16 span:after {
+    position: absolute;
+    top: 8px;
+    left: 265px;
+    right:0;
+    bottom: 0;
+}
+
+h4.ergebnis17 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis17 span {
+    position:relative;
+}
+h4.ergebnis17 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 190%;
+}
+h4.ergebnis17 span:after {
+    position: absolute;
+    top: 8px;
+    left: 198px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis20 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis20 span {
+    position:relative;
+}
+h4.ergebnis20 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 195%;
+}
+h4.ergebnis20 span:after {
+    position: absolute;
+    top: 8px;
+    left: 196px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis23 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis23 span {
+    position:relative;
+}
+h4.ergebnis23 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 265%;
+}
+h4.ergebnis23 span:after {
+    position: absolute;
+    top: 8px;
+    left: 163px;
+    right:0;
+    bottom: 0;
+}
+
+
+h4.ergebnis24 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis24 span {
+    position:relative;
+}
+h4.ergebnis24 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 211%;
+}
+h4.ergebnis24 span:after {
+    position: absolute;
+    top: 8px;
+    left: 185px;
+    right:0;
+    bottom: 0;
+}
+
+
+h4.ergebnis25 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis25 span {
+    position:relative;
+}
+h4.ergebnis25 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 106%;
+}
+h4.ergebnis25 span:after {
+    position: absolute;
+    top: 8px;
+    left: 270px;
+    right:0;
+    bottom: 0;
+}
+
+
+h4.ergebnis26 {
+    font-family: 'Metropolis', bold;
+    font-size: 30px;
+    margin-top: 248px;
+    font-weight: 600;
+    margin-left: 65px;
+    margin-right: 82px;
+    color: #585858;
+    width:640px;
+    margin-bottom: 23px;
+}
+h4.ergebnis26 span {
+    position:relative;
+}
+h4.ergebnis26 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top:10px;
+    right: 0;
+    bottom: 0;
+    width: 598px;
+}
+h4.ergebnis26 span:after {
+    position: absolute;
+    top: 12px;
+    left: 40px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis6 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    margin-top: 85px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis6 span {
+    position:relative;
+}
+h4.ergebnis6 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 176%;
+}
+h4.ergebnis6 span:after {
+    position: absolute;
+    top: 8px;
+    left: 207px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis7 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis7 span {
+    position:relative;
+}
+h4.ergebnis7 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 253%;
+}
+h4.ergebnis7 span:after {
+    position: absolute;
+    top: 8px;
+    left: 167px;
+    right:0;
+    bottom: 0;
+}
+
+h4.ergebnis8 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis8 span {
+    position:relative;
+}
+h4.ergebnis8 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 221%;
+}
+h4.ergebnis8 span:after {
+    position: absolute;
+    top: 8px;
+    left: 180px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis10 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis10 span {
+    position:relative;
+}
+h4.ergebnis10 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 324%;
+}
+h4.ergebnis10 span:after {
+    position: absolute;
+    top: 8px;
+    left: 142px;
+    right:0;
+    bottom: 0;
+}
+
+h4.ergebnis11 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis11 span {
+    position:relative;
+}
+h4.ergebnis11 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 333%;
+}
+h4.ergebnis11 span:after {
+    position: absolute;
+    top: 8px;
+    left: 140px;
+    right:0;
+    bottom:0;
+}
+
+h4.ergebnis12 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis12 span {
+    position:relative;
+}
+h4.ergebnis12 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 274%;
+}
+h4.ergebnis12 span:after {
+    position: absolute;
+    top: 8px;
+    left: 157px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis18 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis18 span {
+    position:relative;
+}
+h4.ergebnis18 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 186%;
+}
+h4.ergebnis18 span:after {
+    position: absolute;
+    top: 8px;
+    left: 200px;
+    right:0;
+    bottom: 0;
+}
+h4.ergebnis22 {
+    font-family: 'Metropolis', bold;
+    font-size: 18px;
+    margin-top: 248px;
+    font-weight: 100;
+    margin-left: 90px;
+    margin-right: 82px;
+    color: #585858;
+    width:535px;
+    margin-bottom: 23px;
+}
+h4.ergebnis22 span {
+    position:relative;
+}
+h4.ergebnis22 span:after {
+    border-top: 1px solid #36B64B;
+    content:"";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    width: 287%;
+}
+h4.ergebnis22 span:after {
+    position: absolute;
+    top: 8px;
+    left: 155px;
+    right:0;
+    bottom: 0;
+}

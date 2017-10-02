@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+     <head>
+            <meta charset="utf-8">
+            <title>Homescreen</title>
+            <meta name="description" content="Starting Screen for app">
+            <link rel="stylesheet" href="../duftkompendium.css">
+            <link rel="stylesheet" href="suche.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("a").on('click', function(event) {
+                        if (this.hash !== "") {
+                            event.preventDefault();
+                            var hash = this.hash;
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function(){
+                                window.location.hash = hash;
+                            });
+                        }
+                    });
+                });
+                // Only 3 colours and buttons for a test.
+                // This list of colours
+                var cList = ['#9BD952','white'];
+                // The butExtend object will become an array here
+                var butList = [];
+
+                // This object keeps track of the number of button clicks.
+                var ButExtend = function butObj(id) {
+                    this.count = 0;
+                    if (document.getElementById(id)) {
+                document.getElementById(id).addEventListener('click',bClick,false);
+                }
+                };
+
+                // Called on a button click
+                function bClick() {
+                    this.style.backgroundColor = cList[butList[this.id].count];
+                    butList[this.id].count++;
+                    if (butList[this.id].count >= cList.length) {
+                        butList[this.id].count = 0;
+                    }
+                }
+
+                window.onload = function() {
+                    // The list of id's for the buttons.
+                    var bId = ['b1','b2','b3','b4','b5','b6','b7','b8','b9','b10','b11','b12','b13','b14','b15','b16','b17','b18'];
+                    for(x in bId) {
+                        butList[bId[x]] = new ButExtend(bId[x]);
+                    }
+                }
+                
+            </script>
+            <style>
+            aside {
+            position: absolute;
+                }
+            </style>
+    </head>
+    <body>
+         <div class="div1">
+            <section class="container">
+                <div class="index">
+                    <a class= "verlinkung" href="../hilfe">Hilfe</a>
+                    <br>
+                    <br>
+                    <a class= "verlinkung" href="../impressum">Impressum</a>
+                </div>
+                <aside class="boxyellow6" id="rectangle">
+                    <img src="../Bilder/lupe_neu.png" class="lupe">
+                    <input type="text" name="search" placeholder="Suchbegriff">
+                    <a href="../ergebnisse"><img src="../Bilder/Pfeile-01.png" align="right" class="pfeil"></a>
+                    <h4 class="ergebnis28"><span>Geschlecht</span></h4>
+                    <section class="suchbuttons">
+                        <div class="left-col">
+                            <input class="left-col" type="button" id="b1" onclick="setColor('button', '#9BD952')";/>
+                            <p class="zutaten2 left-col">Damen</p>
+                        </div>
+                        <div class="center-col">
+                            <input class="left-col" type="button" id="b2"  onclick="setColor('button', '#9BD952')";/>
+                            <p class="zutaten2 left-col">Unisex</p>
+                        </div>
+                        <div class="right-col">
+                            <input class="left-col" type="button" id="b3"  onclick="setColor('button', '#9BD952')";/>
+                            <p class="zutaten2 left-col">Herren</p>
+                        </div>
+                    </section>
+                    <h4 class="ergebnis29"><span>Duftfamilie</span></h4>
+                        <section class="suchbuttons">
+                            <div class="left-col">
+                                <input class="left-col" type="button" id="b4"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Blumig</p>
+                            </div>
+                            <div class="center-col">
+                                <input class="left-col" type="button" id="b5"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Fougère</p>
+                            </div>
+                            <div class="right-col">
+                                <input class="left-col" type="button" id="b6"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Citrus</p>
+                            </div>
+                        </section>
+                        <section class="suchbuttons2">
+                            <div class="left-col">
+                                <input class="left-col" type="button" id="b7"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Chypre</p>
+                            </div>
+                            <div class="center-col">
+                                <input class="left-col" type="button" id="b8"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Holzig</p>
+                            </div>
+                            <div class="right-col">
+                                <input class="left-col" type="button" id="b9"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Orientalisch</p>
+                            </div>
+                        </section>
+                        <h4 class="ergebnis30"><span></span></h4>
+                    <br>
+                        <a class="buttoninverted" href="../zutaten">Zutatenwahl</a>
+                        <a href="../zutaten"><img src="../Bilder/Pfeile-01.png" align="right" class="pfeil2"></a>
+                    <h4 class="ergebnis31"><span>Duftcharakter</span></h4>
+                        <section class="suchbuttons">
+                            <div class="left-col">
+                                <input class="left-col" type="button" id="b10"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Ambriert</p>
+                            </div>
+                            <div class="center-col">
+                                <input class="left-col" type="button" id="b11"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Animalisch</p>
+                            </div>
+                            <div class="right-col">
+                                <input class="left-col" type="button" id="b12"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Aquatisch</p>
+                            </div>
+                        </section>
+                        <section class="suchbuttons2">
+                            <div class="left-col">
+                                <input class="left-col" type="button" id="b13"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Bouquet</p>
+                            </div>
+                            <div class="center-col">
+                                <input class="left-col" type="button" id="b14"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Exotisch</p>
+                            </div>
+                            <div class="right-col">
+                                <input class="left-col" type="button" id="b15"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Frisch</p>
+                            </div>
+                        </section>
+                        <section class="suchbuttons3">
+                            <div class="left-col">
+                                <input class="left-col" type="button" id="b16"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Fruchtig</p>
+                            </div>
+                            <div class="center-col">
+                                <input class="left-col" type="button" id="b17"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Gourmet</p>
+                            </div>
+                            <div class="right-col">
+                                <input class="left-col" type="button" id="b18"  onclick="setColor('button', '#9BD952')";/>
+                                <p class="zutaten2 left-col">Würzig</p>
+                            </div>
+                        </section>
+                        <a class="buttoninverted" href="../zutaten">Zutatenwahl</a>
+                        <h4 class="ergebnissuche"><span></span></h4>
+                        <a class="buttonyellow2" href="../ergebnisse">Suchen</a>
+                        <a href="../ergebnisse"><img src="../Bilder/Pfeile2-01.png" align="right" class="pfeil3"></a>
+                        
+                 </aside>
+                <a href="../lexikon"><aside class="boxgreen2" id="rectangle">
+                    </aside></a>
+                <a href="https://mglugla.github.io/DuftKompendium"><aside class="boxblue" id="rectangle">    
+                    </aside></a>
+            </section>
+        </div>
+    </body>
+</html>

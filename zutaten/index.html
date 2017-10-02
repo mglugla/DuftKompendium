@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html>
+     <head>
+            <meta charset="utf-8">
+            <title>Homescreen</title>
+            <meta name="description" content="Starting Screen for app">
+            <link rel="stylesheet" href="../duftkompendium.css">
+            <link rel="stylesheet" href="lexikon.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+            <script type="text/javascript" src="../sticky/jquery.sticky.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("a").on('click', function(event) {
+                        if (this.hash !== "") {
+                            event.preventDefault();
+                            var hash = this.hash;
+                            $('html, body')({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function(){
+                                window.location.hash = hash;
+                            });
+                        }
+                    });
+                }); 
+                // Only 3 colours and buttons for a test.
+                // This list of colours
+                var cList = ['#9BD952','white'];
+                // The butExtend object will become an array here
+                var butList = [];
+
+                // This object keeps track of the number of button clicks.
+                var ButExtend = function butObj(id) {
+                    this.count = 0;
+                    if (document.getElementById(id)) {
+                document.getElementById(id).addEventListener('click',bClick,false);
+                }
+                };
+
+                // Called on a button click
+                function bClick() {
+                    this.style.backgroundColor = cList[butList[this.id].count];
+                    butList[this.id].count++;
+                    if (butList[this.id].count >= cList.length) {
+                        butList[this.id].count = 0;
+                    }
+                }
+
+                window.onload = function() {
+                    // The list of id's for the buttons.
+                    var bId = ['b1','b2','b3','b4','b5','b6','b7','b8','b9','b10','b11','b12','b13','b14','b15','b16','b17','b18','b19','b20','b21','b22','b23','b24','b25','b26','b27','b28','b29','b30','b31','b32','b33','b34','b35','b36','b37','b38','b39','b40','b41','b42','b43','b44','b45','b45','b46','b47','b48','b49','b50','b51','b52','b53','b54','b55','b56','b57','b58','b59','b60','b61','b62','b63','b64','b65','b66','b67',,'b68','b69','b70','b71','b72','b73','b74','b75','b76','b77','b78','b79','b80','b81','b82','b83','b84','b85','b86','b87','b88','b89','b90','b91','b92','b93'];
+                    for(x in bId) {
+                        butList[bId[x]] = new ButExtend(bId[x]);
+                    }
+                }
+            </script>
+            <style>
+            aside {
+            position: absolute;
+                }
+            input[type=button] {  
+                -webkit-appearance:none;
+                }
+            </style>
+    </head>
+    <body>
+         <div class="div1">
+            <section class="container">
+                <div class="index">
+                    <a class= "verlinkung" href="../hilfe">Hilfe</a>
+                    <br>
+                    <br>
+                    <a class= "verlinkung" href="../impressum">Impressum</a>
+                </div>
+                <aside class="boxyellow2" id="rectangle">
+                    <section id="wrapper7">
+                        <div id="left5">
+                        <a class="verlinkungdetail2" style=color:#9BD952>Zutatenwahl</a>
+                        </div>
+                        <div class="right3">
+                        <a class="verlinkungdetail" href="../suche">Fertig</a>
+                        </div>
+                    </section>
+                        <div class="nav2">
+                            <a class="verlinkunga" href="#lettera" style="margin-left: 1px">A</a>
+                            <a class="verlinkunga" href="#letterb" style="margin-left: 2px">B</a>
+                            <a class="verlinkunga" href="#letterc" style="margin-left: 2px">C</a>
+                            <a class="verlinkunga" href="#letterd" style="margin-left: 2px">D</a>
+                            <a class="verlinkunga" href="#lettere" style="margin-left: 3px">E</a>
+                            <a class="verlinkunga" href="#letterf" style="margin-left: 3px">F</a>
+                            <a class="verlinkunga" href="#letterg" style="margin-left: 2px">G</a>
+                            <a class="verlinkunga" href="#letterh" style="margin-left: 2px">H</a>
+                            <a class="verlinkunga" href="#letteri" style="margin-left: 7px">I</a>
+                            <a class="verlinkunga" href="#letterj" style="margin-left: 4px">J</a>
+                            <a class="verlinkunga" href="#letterk" style="margin-left: 2px">K</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 4px">L</a>
+                            <a class="verlinkunga" href="#letterm">M</a>
+                            <a class="verlinkunga" href="#lettern" style="margin-left: 1px">N</a>
+                            <a class="verlinkunga" href="#lettero" style="margin-left: 1px">O</a>
+                            <a class="verlinkunga" href="#letterp" style="margin-left: 3px">P</a>
+                            <a class="verlinkunga" href="#letterq" style="margin-left: 1px">Q</a>
+                            <a class="verlinkunga" href="#letterr" style="margin-left: 3px">R</a>
+                            <a class="verlinkunga" href="#letters" style="margin-left: 3px">S</a>
+                            <a class="verlinkunga" href="#lettert" style="margin-left: 3px">T</a>
+                            <a class="verlinkunga" href="#letteru" style="margin-left: 3px">U</a>
+                            <a class="verlinkunga" href="#letterv" style="margin-left: 3px">V</a>
+                            <a class="verlinkunga" href="#letterw" style="margin-left: 0px">W</a>
+                            <a class="verlinkunga" href="#letterx" style="margin-left: 3px">X</a>
+                            <a class="verlinkunga" href="#lettery" style="margin-left: 3px">Y</a>
+                            <a class="verlinkunga" href="#letterz" style="margin-left: 3px">Z</a>
+                        </div> 
+                        
+                   
+                        <h4 class="ergebnis26" id="lettera"><span>A</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b1" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Agarholz</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b2" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Aldehyde</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b3" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Amber</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b4" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Ambra</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b5" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Ambrette</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b6" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Anis</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b7" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Aprikose</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b8" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Aqua</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterb"><span>B</span></h4> 
+                         <section id="wrapper5">
+                        <input type="button" id="b9" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Baldrian</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b10" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Bambus</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b11" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Basilikum</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b12" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Bayöl</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b13" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Beifuß</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b14" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Benzoeharz</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b15" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Bergamotte</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b16" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Bibergeil</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterc"><span>C</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b17" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Cassis</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterd"><span>D</span></h4> 
+                        <section id="wrapper5">
+                        <input type="button" id="b18" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Dill</p>
+                        </section>
+                        <h4 class="ergebnis27" id="lettere"><span>E</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b19" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Eichenmoos</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b20" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Elemi</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b21" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Engelwurz</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b22" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Estragon</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterf"><span>F</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b23" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Feige</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b24" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Fenchel</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b25" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Fichte</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b26" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Frangipani</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b27" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Freesie</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterg"><span>G</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b28" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Gaiacholz</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b29" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Galbanumharz</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b30" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Gardenie</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b31" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Geranie</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b32" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Grapefruit</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterh"><span>H</span></h4> 
+                        <section id="wrapper5">
+                        <input type="button" id="b33" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Heliotropin</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b34" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Himbeere</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letteri"><span>I</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b35" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Immortelle</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b36" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Ingwer</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b37" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Iris</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterj"><span>J</span></h4>
+                         <section id="wrapper5">
+                        <input type="button" id="b38" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Jasmin</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterk"><span>K</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b39" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Kalmusöl</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b40" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Kamille</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b41" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Kardamom</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b42" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Kassie</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b43" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Kiefer</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b44" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Koriander</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b45" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Kumin</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterl"><span>L</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b46" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Labdanum</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b47" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Lavandin</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b48" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Lavendel</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b49" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Limone</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b50" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Lorbeer</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b51" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Lotus</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterm"><span>M</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b52" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Maiglöckchen</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b53" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Majoran</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b54" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Mandarine</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b55" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Mandel</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b56" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Menthol</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b57" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Mimose</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b58" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Minze</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b59" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Moschus</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b60" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Myrrhe</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b61" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Myrte</p>
+                        </section>
+                        <h4 class="ergebnis27" id="lettern"><span>N</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b62" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Narzisse</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b63" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Nelke</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b64" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Neroliöl</p>
+                        </section>
+                        <h4 class="ergebnis27" id="lettero"><span>O</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b65" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Olibanumöl</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b66" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Orange</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b67" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Origano</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button"id="b68" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Osmanthus</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterp"><span>P</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b69" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Patchouli</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b70" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Pfeffer</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b71" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Piment</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterq"><span>Q</span></h4> 
+                        <h4 class="ergebnis27" id="letterr"><span>R</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b72" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Rose</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b73" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Rosenholz</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b74" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Rosmarin</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letters"><span>S</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b75" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Sandelholz</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b76" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Sellerieöl</p>
+                        </section>
+                        <h4 class="ergebnis27" id="lettert"><span>T</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b77" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Tabak</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b78" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Tagetes</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b79" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Thymian</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b80" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Tolubalsam</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b81" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Tonkabohne</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letteru"><span>U</span></h4> 
+                        <h4 class="ergebnis27" id="letterv"><span>V</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b82" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Vanille</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b83" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Vanillin</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b84" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Veilchen</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterw"><span>W</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b85" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Wacholder</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b86" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Wildkirschen</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterx"><span>X</span></h4> 
+                        <h4 class="ergebnis27" id="lettery"><span>Y</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b87" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Ylang-Ylang</p>
+                        </section>
+                        <h4 class="ergebnis27" id="letterz"><span>Z</span></h4>
+                        <section id="wrapper5">
+                        <input type="button" id="b88" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Zeder</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b89" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Zibet</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b90" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Zimt</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b91" class="button"onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Zitrone</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b92" class="button" onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Zitronell</p>
+                        </section>
+                        <section id="wrapper6">
+                        <input type="button" id="b93" class="button"  onclick="setColor('button', '#9BD952')";/>
+                        <p class="zutaten">Zypresse</p>
+                        </section>
+                 </aside>
+                <a href="../lexikon"><aside class="boxgreen2" id="rectangle">
+                    </aside></a>
+                <a href="https://mglugla.github.io/DuftKompendium"><aside class="boxblue" id="rectangle">    
+                    </aside></a>
+            </section>
+        </div>
+    </body>
+</html>

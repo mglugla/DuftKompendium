@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+     <head>
+            <meta charset="utf-8">
+            <title>Homescreen</title>
+            <meta name="description" content="Starting Screen for app">
+            <link rel="stylesheet" href="../duftkompendium.css">
+            <link rel="stylesheet" href="lexikon.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("a").on('click', function(event) {
+                        if (this.hash !== "") {
+                            event.preventDefault();
+                            var hash = this.hash;
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function(){
+                                window.location.hash = hash;
+                            });
+                        }
+                    });
+                });
+            </script>
+            <style>
+            aside {
+            position: absolute;
+                }
+            </style>
+    </head>
+    <body>
+         <div class="div1">
+            <section class="container">
+                <div class="index">
+                    <a class= "verlinkung" href="../hilfe">Hilfe</a>
+                    <br>
+                    <br>
+                    <a class= "verlinkung" href="../impressum">Impressum</a>
+                </div>
+                <a href="../suche"><aside class="boxyellow5" id="rectangle">  
+                    </aside></a>
+                <aside class="boxgreen5" id="rectangle">
+                  <section id="wrapper3">
+                        <div id="left3">
+                        <a class="verlinkungdetail" style="font-weight: 600">Lexikon</a>
+                        </div>
+                        <div class="right3">
+                        <a class="verlinkungdetail">Parfümname A bis Z</a>
+                        </div>
+                    </section>
+                    <section id="wrapper4">
+                        <div id="left4">
+                        <p class="verlinkungdetail"></p>
+                        </div>
+                        <div class="right3">
+                        <a class="verlinkungdetail2">Hersteller A bis Z</a>
+                        </div>
+                    </section>
+                        <div class="nav">
+                            <a class="verlinkunga" href="#lettera" style="margin-left: 1px">A</a>
+                            <a class="verlinkunga" href="#lettera" style="margin-left: 2px">B</a>
+                            <a class="verlinkunga" href="#lettera" style="margin-left: 2px">C</a>
+                            <a class="verlinkunga" href="#letterd" style="margin-left: 2px">D</a>
+                            <a class="verlinkunga" href="#lettere" style="margin-left: 3px">E</a>
+                            <a class="verlinkunga" href="#lettere" style="margin-left: 3px">F</a>
+                            <a class="verlinkunga" href="#letterg" style="margin-left: 2px">G</a>
+                            <a class="verlinkunga" href="#letterh" style="margin-left: 2px">H</a>
+                            <a class="verlinkunga" href="#letterh" style="margin-left: 7px">I</a>
+                            <br>
+                            <a class="verlinkunga" href="#letterj" style="margin-left: 4px">J</a>
+                            <a class="verlinkunga" href="#letterk" style="margin-left: 2px">K</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 4px">L</a>
+                            <a class="verlinkunga" href="#letterl">M</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 1px">N</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 1px">O</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 3px">P</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 1px">Q</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 3px">R</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 3px">S</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 3px">T</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 3px">U</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 3px">V</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 0px">W</a>
+                            <a class="verlinkunga" href="#letterl" style="margin-left: 3px">X</a>
+                            <a class="verlinkunga" href="#lettery" style="margin-left: 3px">Y</a>
+                            <a class="verlinkunga" href="#lettery" style="margin-left: 3px">Z</a>
+                        </div>
+                        <h4 class="ergebnis6" id="lettera"><span>Calvin Klein // Damen</span></h4> 
+                        <p class="lexikon">Beauty</p>
+                        <img src="../Bilder/Parfum_CalvinKlein_Beauty_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis7"><span>Chanel // Damen</span></h4> 
+                        <p class="lexikon">Chanel No. 5</p>
+                        <img src="../Bilder/Parfum_Chanel_ChanelNo5_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis8" id="letterd"><span>Davidoff // Damen</span></h4> 
+                        <p class="lexikon">Cool Water</p>
+                        <img src="../Bilder/Parfum_Davidoff_CoolWater_Her_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis9"><span>Davidoff // Herren</span></h4> 
+                        <a href="../detailseite/davidoff"><p class="lexikon">Cool Water</p></a>
+                        <a href="../detailseite/davidoff"><img src="../Bilder/Parfum_Davidoff_CoolWater_Him_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis10"><span>Dior // Damen</span></h4> 
+                        <p class="lexikon">Poison</p>
+                        <img src="../Bilder/Parfum_Dior_Poison_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis11"><span>Dior // Herren</span></h4> 
+                        <p class="lexikon">Sauvage</p>
+                        <img src="../Bilder/Parfum_DiorSauvage_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis12"><span>DKNY // Damen</span></h4> 
+                        <p class="lexikon">Be Delicious</p>
+                        <img src="../Bilder/Parfum_DKNY_BeDelicious_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis13" id="lettere"><span>Escada // Damen</span></h4> 
+                        <a href="../detailseite/escada"><p class="lexikon">Fiesta Carioca</p></a>
+                        <a href="../detailseite/escada"><img src="../Bilder/Parfum_Escada_FiestaCarioca_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis14" id="letterg"><span>Georgio Armani // Damen</span></h4> 
+                        <a href="../detailseite/armani_acqua"><p class="lexikon">Acqua di Gioia</p></a>
+                        <a href="../detailseite/armani_acqua"><img src="../Bilder/Parfum_GeorgioArmani_AuquaDiGioia_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis14"><span>Georgio Armani // Damen</span></h4> 
+                        <a href="../detailseite/armani_intense"><p class="lexikon">Sì</p></a>
+                        <a href="../detailseite/armani_intense"><img src="../Bilder/Parfum_GiorgioArmani_SiIntense_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis16" id="letterh"><span>Hollister California // Damen</span></h4> 
+                        <a href="../detailseite/hollister"><p class="lexikon">Wave</p></a>
+                        <a href="../detailseite/hollister"><img src="../Bilder/Parfum_HollisterCalifornia_Wave_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis17"><span>Hugo Boss // Herren</span></h4> 
+                        <a href="../detailseite/boss_pure"><p class="lexikon">Boss Pure</p></a>
+                        <a href="../detailseite/boss_pure"><img src="../Bilder/Parfum_HugoBoss_BossPure_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis18"><span>Hugo Boss // Damen</span></h4> 
+                        <p class="lexikon2">The Scent for <br> her</p>
+                        <img src="../Bilder/Parfum_HugoBoss_TheScent_Her_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis17"><span>Hugo Boss // Herren</span></h4> 
+                        <p class="lexikon2">The Scent for <br>him</p>
+                        <img src="../Bilder/Parfum_HugoBoss_TheScent_Him_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis20" id="letterj"><span>Jill Sander // Herren</span></h4> 
+                        <p class="lexikon">Strictly</p>
+                        <img src="../Bilder/Parfum_Jill Sander_Strictly_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis20"><span>Jill Sander // Herren</span></h4> 
+                        <a href="../detailseite/jilsander_sense"><p class="lexikon2">Ultrasense White</p></a>
+                        <a href="../detailseite/jilsander_sense"><img src="../Bilder/Parfum_JillSander_UltrasenseWhite_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis22"><span>Joop! // Herren</span></h4> 
+                        <p class="lexikon">Red King</p>
+                        <img src="../Bilder/Parfum_Joop_RedKing_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche">
+                        <h4 class="ergebnis23" id="letterk"><span>Kenzo // Damen</span></h4> 
+                        <a href="../detailseite/kenzo"><p class="lexikon">Jeu d´Amour</p></a>
+                        <a href="../detailseite/kenzo"><img src="../Bilder/Parfum_Kenzo_JeaDAmour_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis24" id="letterl"><span>Lancome // Damen</span></h4> 
+                        <a href="../detailseite/lancome"><p class="lexikon">La vie est belle</p></a>
+                        <a href="../detailseite/lancome"><img src="../Bilder/Parfum_Lancome_LaVieEstBelle_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                        <h4 class="ergebnis25" id="lettery"><span>Yves Saint Laurent // Damen</span></h4> 
+                        <a href="../detailseite/yves"><p class="lexikon">Manifesto</p></a>
+                        <a href="../detailseite/yves"> <img src="../Bilder/Parfum_YvesSaintLaurent_Manifesto_1-01.png" align="right" height="200" class="ergebnisbild" alt="Bild der Parfumflasche"></a>
+                </aside>
+                <a href="https://mglugla.github.io/DuftKompendium"><aside class="boxblue" id="rectangle">    
+                    </aside></a>
+            </section>
+        </div>
+    </body>
+</html>
