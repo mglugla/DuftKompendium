@@ -8,22 +8,20 @@
             <link rel="stylesheet" href="lexikon.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-            <script type="text/javascript" src="../sticky/jquery.sticky.js"></script>
             <script>
                 $(document).ready(function(){
                     $("a").on('click', function(event) {
                         if (this.hash !== "") {
                             event.preventDefault();
                             var hash = this.hash;
-                            $('html, body')({
+                            $('html, body').animate({
                                 scrollTop: $(hash).offset().top
                             }, 800, function(){
                                 window.location.hash = hash;
                             });
                         }
                     });
-                }); 
+                });
                 // Only 3 colours and buttons for a test.
                 // This list of colours
                 var cList = ['#9BD952','white'];
